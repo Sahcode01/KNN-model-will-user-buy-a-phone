@@ -46,7 +46,7 @@ if st.button("Run KNN Algorithm"):
     probabilities = model.predict_proba(theNewUser)[0]
 
     if prediction == 1:
-        st.success("This user will buy phone")
+        st.success("This user will likely buy phone")
         st.write(f"Confidence: AI is **{probabilities[1]*100:.0f}**% sure")
     else:
         st.error("This user will likely not buy phone")
